@@ -1,0 +1,178 @@
+
+    <div class="container-fluid">
+        <div class="title">Skill Matrix</div>
+        
+                <div>
+                    <span>Name</span>
+                    <input type="text" required placeholder="Enter Name" >
+                </div>
+                <div>
+                    <span>Project Name</span>
+                    <input type="text" required placeholder="Enter Your Project Name">
+                </div>
+                <div>
+                    <span>Primary Skill 1</span>
+                    <select
+                    id="selectid"
+                    class="form-control-mb-12"
+                  style="width: 300px;height: 39px;">
+                    <option>Select</option>
+                    <option >Frontend</option>
+                    <option >Backend</option>
+                    <option >Database</option>
+                    <option >Full Stack</option>
+                    <option >Data Science</option>
+                    <option >Software Testing</option>
+                    <option >DevOps</option>
+                  </select>
+                </div>
+
+                
+                <div>
+                    <span>Primary Skill 2</span>
+                    <select
+                    id="selectid"
+                    class="form-control-mb-12"
+                  style="width: 300px;height: 39px;">
+                    <option>Select</option>
+                    <option >Frontend</option>
+                    <option >Backend</option>
+                    <option >Database</option>
+                    <option >Full Stack</option>
+                    <option >Data Science</option>
+                    <option >Software Testing</option>
+                    <option >DevOps</option>
+                  </select>
+                </div>
+
+                
+                <div>
+                    <span>Secondary Skill 1</span>
+                    <select
+                    id="selectid"
+                    class="form-control-mb-12"
+                  style="width: 300px;height: 39px;">
+                    <option>Select</option>
+                    <option >Frontend</option>
+                    <option >Backend</option>
+                    <option >Database</option>
+                    <option >Full Stack</option>
+                    <option >Data Science</option>
+                    <option >Software Testing</option>
+                    <option >DevOps</option>
+                  </select>
+                </div>
+
+                <div>
+                    <span>Secondary Skill 2</span>
+                    <select
+                    [(ngModel)]="chosenMod" (ngModelChange)="modo()"
+                    id="selectid"
+                    class="form-control-mb-12"
+                  style="width: 300px;height: 39px;">
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="Database">Database</option>
+                    <option value="Full Stack">Full Stack</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Software Testing">Software Testing</option>
+                    <option value="DevOps">DevOps</option>
+                  </select>
+                </div>
+
+                <div>
+                    <span>Total Work Experience</span>
+                    <input type="text" required placeholder="Your total Experience in years">
+                </div>
+
+                <div>
+                    <span>Experience in Atyeti</span>
+                    <input type="text" required placeholder="Your Work Experience in Atyeti">
+                </div>
+
+                <div>
+                    <span>Certifications in Past</span><br>
+                    1.<input type="text" required placeholder="Enter Your Certifications Name">
+                    2.<input type="text" required placeholder="Enter Your Certifications Name">
+                </div>
+
+                <div>
+                    <span>Upload Certificates if Available</span><br>
+                    1.<input type="file"  placeholder="Enter Your Certifications Name">
+                    2.<input type="file"  placeholder="Enter Your Certifications Name">
+                </div>
+
+                <div>
+                    <span>Certifications Source</span><br>
+                    1.<input type="text" required placeholder="Enter Your Certifications source/link">
+                    2.<input type="text" required placeholder="Enter Your Certifications source/link">
+                </div>
+                
+                <div>
+                    <span>Certifications in Atyeti</span><br>
+                    1.<input type="text" required placeholder="Enter Your Certifications Name">
+                    2.<input type="text" required placeholder="Enter Your Certifications Name">
+                </div>
+
+                <div>
+                    <span >Upload Certificates if Available</span><br>
+                    1.<input type="file"  placeholder="Enter Your Certifications Name">
+                    2.<input type="file"  placeholder="Enter Your Certifications Name">
+                </div>
+
+                <div>
+                    <span >Certifications Source</span><br>
+                    1.<input type="text" required placeholder="Enter Your Certifications source/link">
+                    2.<input type="text" required placeholder="Enter Your Certifications source/link">
+                </div>
+
+            </div>
+                 <div class="button">
+                     <input type="submit" value="Submit" name="submit">
+                 </div>
+       
+<div>
+    <button
+      type="button"
+      class="btn btn-secondary btn-sm"
+      (click)="openPopup()"
+    >
+      <i class="fa fa-plus"></i> Add Broadcast
+    </button>
+    <div
+      class="modal"
+      tabindex="-1"
+      role="dialog"
+      [ngStyle]="{ display: displayStyle }"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Select Frontend Technologies you Know</h4>
+          </div>
+          <div class="modal-body">
+            <form action="" (ngSubmit)="onSubmit()" >
+                <mat-checkbox (change)="checkCheckBoxvalue($event)">HTML</mat-checkbox>
+              <div class="modal-footer">
+                <button
+                  type="submit"
+                  class="btn btn-success"
+                  (click)="closePopup()"
+                >
+                  Submit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  (click)="closePopup()"
+                >
+                  Close
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
