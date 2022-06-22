@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SkillMatrixComponent } from './skill-matrix/skill-matrix.component';
 
 const routes: Routes = [
-  {path:"skill", component:SkillMatrixComponent}
+  {path:"", component:SkillMatrixComponent}
 ];
 
 @NgModule({
